@@ -1,6 +1,6 @@
 services:
   jenkins:
-    image: woo204/jenkins-dood:latest
+    image: woo204/jenkins-with-dood:latest
     container_name: jenkins
     restart: unless-stopped
     user: root

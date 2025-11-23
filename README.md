@@ -10,7 +10,7 @@
 ```yml
 services:
   jenkins:
-    image: woo204/jenkins-dood:latest
+    image: woo204/jenkins-with-dood:latest
     container_name: jenkins
     restart: unless-stopped
     user: root
@@ -34,5 +34,5 @@ docker compose up -d
 docker login
 
 # 형식: docker build -t <ID>/<이미지명>:<태그> .
-docker buildx build --push -t woo204/jenkins-dood:latest .
+docker buildx build --push -t woo204/jenkins-with-dood:latest .
 ```
