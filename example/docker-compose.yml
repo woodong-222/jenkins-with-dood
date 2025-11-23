@@ -5,7 +5,7 @@ services:
     restart: unless-stopped
     user: root
     ports:
-      - "20831:8080"
+      - "20004:8080"
       - "50000:50000"
     volumes:
       - ./jenkins_home:/var/jenkins_home
