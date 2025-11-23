@@ -11,11 +11,11 @@
 services:
   jenkins:
     image: woo204/jenkins-dood:latest
-    container_name: jenkins_server
+    container_name: jenkins
     restart: unless-stopped
     user: root
     ports:
-      - "8080:8080"
+      - "20831:8080"
       - "50000:50000"
     volumes:
       - ./jenkins_home:/var/jenkins_home
