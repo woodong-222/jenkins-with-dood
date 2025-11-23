@@ -8,8 +8,6 @@
 
 `docker-compose.yml` 작성
 ```yml
-version: '3.8'
-
 services:
   jenkins:
     image: woo204/jenkins-dood:latest
