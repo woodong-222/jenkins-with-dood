@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   jenkins:
-    build: .
+    image: woo204/jenkins-dood:latest
     container_name: jenkins_server
     restart: unless-stopped
     user: root
@@ -11,5 +11,4 @@ services:
       - "50000:50000"
     volumes:
       - ./jenkins_home:/var/jenkins_home
-      
       - /var/run/docker.sock:/var/run/docker.sock
